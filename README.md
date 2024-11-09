@@ -1,6 +1,6 @@
 
 PDF Q&A Application
-This application allows users to upload PDF files, extract the text content, and then ask questions based on the content of the document. The backend processes the PDF file, saves the content to a database, and interacts with Hugging Face’s Inference API to answer questions. The frontend allows users to upload PDFs and interact with the document content via questions.
+This application allows users to upload PDF files, extract the text content, and then ask questions based on the content. The backend processes the PDF file, saves the content to a database, and interacts with Hugging Face’s Inference API to answer questions. The front end allows users to upload PDFs and interact with the document content via questions.
 Features
 •	Upload PDF files.
 •	Extract text content from PDFs.
@@ -9,7 +9,7 @@ Features
 Architecture
 The application follows a typical full-stack structure:
 •	Backend: Node.js server with Express.js, using MongoDB to store PDF document data.
-•	Frontend: React.js frontend with a user-friendly interface that allows users to upload PDFs and interact with the document.
+•	Frontend: React.js frontend has a user-friendly interface that allows users to upload PDFs and interact with the document.
 ________________________________________
 Requirements
 •	Node.js (v14 or later)
@@ -30,7 +30,7 @@ npm install
 3.	Create a .env file:
 In the backend folder, create a .env file and set the following environment variables:
 MONGO_URI=your-mongodb-uri
-HF_API_KEY=your-hugging-face-api-key
+HF_API_KEY=your-hugging-face-API-key
 PORT = 5000
 4.	Start the Backend Server:
 For development, use nodemon to start the backend server:
@@ -109,7 +109,7 @@ Example response:
 ________________________________________
 Frontend Usage
 File Upload
-The frontend provides a user interface for uploading PDF files. The uploaded file's content is extracted, stored in the database, and a unique document ID is returned.
+The front end provides a user interface for uploading PDF files. The uploaded file's content is extracted, and stored in the database, and a unique document ID is returned.
 1.	Upload a PDF file: Click on the "Upload PDF" button to select a file and upload it to the server.
 2.	View the uploaded file details: After a successful upload, a modal will appear showing the filename.
 Ask a Question
